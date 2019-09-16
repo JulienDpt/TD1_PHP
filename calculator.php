@@ -17,5 +17,6 @@ for($cpt=0;$cpt<=3;++$cpt)
     echo'type="submit" name="action" value="'.$operator[$cpt].'"/>'.$operator[$cpt].'<br/>
         '."\n";}
 echo '</form>';
+    echo '<input type="submit" name="submit">'
 ?>
 
