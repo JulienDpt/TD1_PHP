@@ -1,5 +1,6 @@
 <?php
-include 'index.php';
+include 'TD1.php';
+include 'TD1Q2.php';
 start_page("calculatrice");
 $operateurs = '*+-/';
 echo '
