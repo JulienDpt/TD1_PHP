@@ -1,22 +1,39 @@
 <?php
-include "TD1Q2.php";
-start_page('Calcul');
-end_page('Calcul');
+function start_page($title)
+{
+    echo ' <!DOCTYPE html> <html
+lang="fr"><head><title>' . PHP_EOL . $title . '</title></head><body><hr/><br/><strong>Calcul</strong><br/><br><hr/></body>' . PHP_EOL
+    ;
+};
+?>
+
+<?php
+start_page('CalculatriceResultat');
+?>
+
+<?php
 $op1 = $_GET['op1'];
 $op2 = $_GET['op2'];
-$action = $_GET['action'];
-echo $action;
-if('*'== $action)
+$op = $_GET['op'];
+if('*'== $op)
 {
     $res = $op1 * $op2;
 }
-elseif('+'== $action)
+elseif('+'== $op)
 {
     $res = $op1 + $op2;
 }
+elseif('/'== $op)
+{
+    $res = $op1 / $op2;
+}
+elseif('-'== $op)
+{
+    $res = $op1 - $op2;
+}
 else
 {
-    echo'<br/><strong>opérateur'.$action.'non géré</strong>';
+    echo'<br/><strong>opérateur'.$op.'nongéré</strong>';
 }
-if (isset($res)) echo $op1. $action . $op2 . '=' . $res;
+if (isset($res)) echo $op1. $op . $op2 . '=' . $res;
 ?>
