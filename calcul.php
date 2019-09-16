@@ -8,7 +8,7 @@ lang="fr"><head><title>' . PHP_EOL . $title . '</title></head><body><hr/><br/><s
 ?>
 
 <?php
-start_page('CalculatriceResultat');
+start_page('CalculatorResult');
 ?>
 
 <?php
@@ -33,7 +33,7 @@ elseif('-'== $op)
 }
 else
 {
-    echo'<br/><strong>opérateur'.$op.'nongéré</strong>';
+    echo'<br/><strong>operator'.$op.'nongéré</strong>';
 }
 if (isset($res)) echo $op1. $op . $op2 . '=' . $res;
 ?>

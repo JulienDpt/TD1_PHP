@@ -9,8 +9,8 @@ lang="fr"><head><title>' . PHP_EOL . $title . '</title></head><body><hr/><br/><s
 
 
 <?php
-start_page("calculatrice");
-$operateurs = '*+-/';
+start_page("Calculator");
+$operator = '*+-/';
 echo '
     <form action = "calcul.php" method = "get">
     <input type = "text" name = "op1" ><br>
@@ -22,7 +22,7 @@ for($cpt=0;$cpt<=3;++$cpt)
     {
         echo'checked = "checked"';
     }
-    echo'type="radio" name="op" value="'.$operateurs[$cpt].'"/>'.$operateurs[$cpt].'<br/>
+    echo'type="radio" name="op" value="'.$operator[$cpt].'"/>'.$operator[$cpt].'<br/>
         '."\n";}
 echo '<input type = "submit"><br>';
 echo '</form>';
