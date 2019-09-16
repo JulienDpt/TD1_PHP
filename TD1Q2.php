@@ -12,7 +12,7 @@
     function end_page ($title)
     {
         echo ' <!DOCTYPE html> <html
-lang="fr"><hr><br>' . PHP_EOL . $title . '</br></hr><body>' . PHP_EOL
+lang="fr"><hr><br><strong>' . PHP_EOL . $title . '</br></hr></strong><body>' . PHP_EOL
         ;
     };
     end_page ('Test')
