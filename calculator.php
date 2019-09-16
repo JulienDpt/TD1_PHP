@@ -1,19 +1,8 @@
 <?php
-        echo ' <!DOCTYPE html> <html
-    lang="fr"><head><title>' . PHP_EOL . $title . '</title></head><body>' . PHP_EOL;
-
-    };
-    start_page('Test');
-
-    function end_page ($title)
-    {
-        echo ' <!DOCTYPE html> <html
-lang="fr"><hr><br><strong>' . PHP_EOL . $title . '</br></hr></strong><body>' . PHP_EOL
-        ;
-    };
+    include 'TD1Q2.php';
     end_page ('Calculator');
     start_page("Calculator");
-    $operateurs = '*+-/';
+    $operator = '*+-/';
 echo '
     <form action = "calcul.php" method = "get">
     <input type = "text" name = "op1" ><br>
@@ -25,9 +14,8 @@ for($cpt=0;$cpt<=3;++$cpt)
     {
         echo'checked = "checked"';
     }
-    echo'type="submit" name="action" value="'.$operateurs[$cpt].'"/>'.$operateurs[$cpt].'<br/>
+    echo'type="submit" name="action" value="'.$operator[$cpt].'"/>'.$operator[$cpt].'<br/>
         '."\n";}
 echo '</form>';
-end_page();
 ?>
 
