@@ -15,8 +15,14 @@
 lang="fr"><hr><br><strong>' . PHP_EOL . $title . '</br></hr></strong><body>' . PHP_EOL
         ;
     };
-    end_page ('Test')
+    end_page ('Test');
+
+    echo date ('1 F d, Y');
+
+    $jour = date('l F d, Y');
+
+
+
     ?>
     </body>
 </html>
-
