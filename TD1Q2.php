@@ -17,11 +17,10 @@ lang="fr"><hr><br><strong>' . PHP_EOL . $title . '</br></hr></strong><body>' . P
     };
     end_page ('Test');
 
-    echo date ('1 F d, Y');
-
+    echo date('l F d, Y')."<br>";
     $jour = date('l F d, Y');
-
-
+    $jour = date('d/m/Y', strtotime('2020-04-01'));
+    echo $jour;
 
     ?>
     </body>
